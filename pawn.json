@@ -1,7 +1,6 @@
 {
-    "user": "Zeex",
+    "user": "AmyrAhmady",
     "repo": "samp-plugin-crashdetect",
-    "include_path": "include",
     "resources": [
         {
             "name": "^crashdetect-(.*)-linux.tar.gz$",
@@ -19,6 +18,11 @@
         }
     ],
     "runtime": {
-        "plugins": ["Zeex/samp-plugin-crashdetect"]
-    }
+        "plugins": ["AmyrAhmady/samp-plugin-crashdetect"]
+    },
+    "contributors": [
+        "Zeex",
+        "Y-Less",
+        "AmyrAhmady"
+    ]
 }
