@@ -1,4 +1,4 @@
-[CrashDetect plugin][github]
+# Crashdetect Plugin for SAMP and open.mp
 ============================
 
 [![Version][version_badge]][version]
