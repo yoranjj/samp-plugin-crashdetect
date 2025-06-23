@@ -641,7 +641,7 @@ void CrashDetect::CheckLongCallTime(void) {
   if (long_call_time_next_ < now) {
     auto diff = now - long_call_time_current_;
     double diff_ms = std::chrono::duration<double, std::milli>(diff).count();
-    LogDebugPrint("Long callback execution detected (hang or performance issue) (%lldms)", static_cast<long long>(diff.count()));
+    LogDebugPrint("Long callback execution detected (hang or performance issue) (%.2fms)", diff_ms);
 
     // Disable repeat stack dumps by setting this WAY in the future.
     long_call_time_next_ =
