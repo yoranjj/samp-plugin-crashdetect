@@ -639,7 +639,7 @@ void CrashDetect::CheckLongCallTime(void) {
   auto now = std::chrono::high_resolution_clock::now();
 
   if (long_call_time_next_ < now) {
-    auto diff = now - long_call_time_current_;
+    auto diff = now - long_call_time_next_;
     double diff_ms = std::chrono::duration<double, std::milli>(diff).count();
     LogDebugPrint("Long callback execution detected (hang or performance issue) (%.2fms)", diff_ms);
 
